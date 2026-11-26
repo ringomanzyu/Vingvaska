@@ -1,0 +1,62 @@
+@charset "utf-8";
+/** 
+#e1f6f8 文字色
+#8199B1 
+#57738E ヘッダー
+#3A4C5F 
+#1C252E メインバック
+#0A0D10
+
+**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 35px;
+
+    height:28px;
+
+    color:#e1f6f8;
+    background:#0A0D10;
+}
+
+#header_menu {
+    position: absolute;
+    left: 10px;
+
+    background: none;
+    border: none;
+
+    color: #e1f6f8;
+
+    font: inherit;
+
+    cursor: pointer;
+}
+
+#header_status {
+    position: absolute;
+    right: 20px;
+
+    background: none;
+    border: none;
+
+    color: #e1f6f8;
+
+    font: inherit;
+}
+
+body {
+
+    background-color: #1C252E;
+
+}
+
+
+
