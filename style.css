@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/** 
+#e1f6f8 文字色
+#8199B1 
+#57738E ヘッダー
+#3A4C5F 
+#1C252E メインバック
+#0A0D10
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1C252E;
+    color: #e1f6f8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    height: 28px;
+    color: #e1f6f8;
+    background: #0A0D10;
+    border-bottom: 1px solid #3A4C5F;
+    flex-shrink: 0;
+}
+
+/* 左上のタイトルロゴ（ボタンの代わりに配置） */
+#header_title {
+    position: absolute;
+    left: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #8199B1;
+}
+
+#header_status {
+    position: absolute;
+    right: 20px;
+    color: #e1f6f8;
+}
+
+.app_container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* 常時表示サイドバー */
+.sidebar {
+    width: 200px;
+    background-color: #0A0D10;
+    border-right: 1px solid #3A4C5F;
+    flex-shrink: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-top: 8px;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 10px 16px;
+    color: #8199B1;
+    text-decoration: none;
+    font-size: 13px;
+    border-left: 3px solid transparent;
+}
+
+
+.sidebar li a:hover {
+    background-color: #202c38;
+    color: #e1f6f8;
+    border-left-color: #57738E;
+}
+
+.sidebar li a.is-active {
+    background-color: #1C252E;
+    color: #e1f6f8;
+    border-left-color: #57738E;
+}
+
+main {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+}
